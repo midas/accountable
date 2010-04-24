@@ -5,12 +5,15 @@ http://github.com/midas/accountable
 
 == DESCRIPTION
 
-
+An abstraction of the account / user pattern.  The account owns all of the system assets and users are delegated 
+permissions to them.
 
 
 == FEATURES
 
-
+* Adds required associations.
+* Adds passive, active and suspended states for managing accounts (requires AASM or State Machine gem)
+* Adds associations for assets.
 
 
 == COMPATABILITY:
@@ -51,6 +54,10 @@ Install the Gem:
     acts_as_accountee
   end
 
+  class Thing
+    acts_as_accountors_asset
+  end
+
 
 === COMPLEX CASE
 
@@ -60,6 +67,10 @@ Install the Gem:
 
   class Member < ActiveRecord::Base  
     acts_as_accountee :of => :group
+  end
+
+  class Thing
+    acts_as_accountors_asset
   end
 
 

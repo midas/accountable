@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "accountable"
     gem.summary = %Q{An abstraction of the account / user pattern.}
-    gem.description = %Q{An abstraction of the account / user pattern.  The account owns all of the assets and a user is delegated permissions to them.}
+    gem.description = %Q{An abstraction of the account / user pattern.  The account owns all of the system assets and users are delegated permissions to them.}
     gem.email = "jason@lookforwardenterprises.com"
     gem.homepage = "http://github.com/midas/accountable"
     gem.authors = ["Jason Harrelson"]
