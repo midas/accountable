@@ -38,8 +38,8 @@ Configure the Gem for use:
 
 Install the Gem:
 
-  bundle install         # Rails 3
-  rake gems:install      # Rails 2
+  bundle install              # Rails 3
+  rake gems:install           # Rails 2
 
 
 == USAGE
