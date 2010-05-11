@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{accountable}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jason Harrelson"]
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
      "lib/accountable.rb",
      "lib/accountable/accountee.rb",
      "lib/accountable/accountor.rb",
+     "lib/accountable/accountor/states.rb",
      "lib/accountable/accountor/states/aasm_traits.rb",
      "lib/accountable/accountor/states/state_machine_instance_methods.rb",
      "lib/accountable/accountor/states/state_machine_traits.rb",
